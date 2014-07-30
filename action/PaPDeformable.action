@@ -1,0 +1,13 @@
+#goal definition
+float32[3] pick_pos
+float32[3] place_pos
+float32 yaw 
+---
+#result definition
+bool successful
+---
+#feedback
+int32 PaPDeformable_state
+int32 PandP_state
+int32 PorP_state
+

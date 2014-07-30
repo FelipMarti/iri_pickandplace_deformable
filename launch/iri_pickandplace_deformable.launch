@@ -1,0 +1,12 @@
+<launch>
+
+  <node name="iri_pickandplace_deformable" pkg="iri_pickandplace_deformable" type="iri_pickandplace_deformable" output="screen" >
+	<remap from="/iri_pickandplace_deformable/wam_joints_pose" to="/estirabot/estirabot_controller/joints_move" />
+    <remap from="/iri_pickandplace_deformable/pick_and_place" to="/iri_wam_generic_pickandplace/pick_and_place" />  
+  </node>
+
+  <include file="$(find iri_wam_generic_pickandplace)/launch/iri_wam_generic_pickandplace.launch" />
+
+
+</launch>
+
